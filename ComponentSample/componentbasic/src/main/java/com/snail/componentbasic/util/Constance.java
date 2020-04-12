@@ -20,4 +20,11 @@ public class Constance {
      * app page
      */
     public static final String AppMainActivity = "/app/activity/MainActivity";
+
+    /**
+     * fragment标签
+     */
+    public static final int HomeFragmentTag = 0;
+    public static final int ContactsFragmentTag = 1;
+    public static final int SettingFragmentTag = 2;
 }

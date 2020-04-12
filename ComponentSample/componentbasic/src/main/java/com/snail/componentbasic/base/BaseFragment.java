@@ -12,10 +12,12 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.snail.componentbasic.R;
 
-public class BaseFragment extends Fragment {
+public abstract class BaseFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initData();
+        initView();
     }
 
     @Override
@@ -26,4 +28,8 @@ public class BaseFragment extends Fragment {
         ARouter.getInstance().inject(this);
         return textView;
     }
+
+    public abstract void initData();
+
+    public abstract void initView();
 }

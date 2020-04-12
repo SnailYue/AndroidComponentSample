@@ -26,4 +26,14 @@ public class ContactsFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_contacts, container, false);
     }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initView() {
+
+    }
 }

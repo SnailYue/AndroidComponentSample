@@ -18,6 +18,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         ARouter.getInstance().inject(this);
     }
 
+    /**
+     * 添加fragment
+     *
+     * @param fragment
+     * @param id
+     */
     public void addFragment(BaseFragment fragment, int id) {
         if (!fragment.isAdded()) {
             getSupportFragmentManager().beginTransaction().add(id, fragment).commit();
@@ -25,20 +31,20 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 根据tag切换fragment
+     *
+     * @param tag
+     */
     public void showFragment(int tag) {
-        switch (tag) {
-            case 0:
-                showFragment(fragments.get(0));
-                break;
-            case 1:
-                showFragment(fragments.get(1));
-                break;
-            case 2:
-                showFragment(fragments.get(2));
-                break;
-        }
+        showFragment(fragments.get(tag));
     }
 
+    /**
+     * 显示fragment
+     *
+     * @param frag
+     */
     public void showFragment(BaseFragment frag) {
         for (BaseFragment fragment : fragments) {
             if (frag != fragment) {

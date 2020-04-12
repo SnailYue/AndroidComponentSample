@@ -7,15 +7,11 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.snail.componentbasic.base.BaseActivity;
-import com.snail.componentbasic.base.BaseFragment;
 import com.snail.componentbasic.util.Constance;
 import com.snail.componentcontacts.view.fragment.ContactsFragment;
 import com.snail.componenthome.view.fragment.HomeFragment;
 import com.snail.componentsample.R;
 import com.snail.componentsetting.view.fragment.SettingFragment;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Route(path = Constance.AppMainActivity)
