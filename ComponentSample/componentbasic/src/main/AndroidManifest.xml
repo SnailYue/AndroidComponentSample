@@ -3,7 +3,7 @@
     package="com.snail.componentbasic">
 
     <application>
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".base.BaseActivity"></activity>
         <activity android:name=".MainActivity" />
     </application>
 

@@ -1,4 +1,4 @@
-package com.snail.componentbasic;
+package com.snail.componentbasic.base;
 
 import android.app.Application;
 

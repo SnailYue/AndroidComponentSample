@@ -3,7 +3,7 @@
     package="com.snail.componentsetting">
 
     <application
-        android:name="com.snail.componentbasic.BaseApplication"
+        android:name="com.snail.componentbasic.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"

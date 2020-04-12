@@ -3,7 +3,7 @@
     package="com.snail.componentcontacts">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".view.MainActivity"></activity>
     </application>
 
 </manifest>

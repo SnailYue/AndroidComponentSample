@@ -26,6 +26,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    /**
+     * 资源重名冲突
+     */
+    resourcePrefix "app_"
 
 }
 
