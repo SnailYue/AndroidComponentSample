@@ -53,4 +53,11 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         getSupportFragmentManager().beginTransaction().show(frag).commit();
     }
+
+    /**
+     * 清除List集合中的数据
+     */
+    public void clearFragmentList() {
+        fragments.clear();
+    }
 }

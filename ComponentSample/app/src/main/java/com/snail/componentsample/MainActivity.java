@@ -1,4 +1,4 @@
-package com.snail.componentsample.view;
+package com.snail.componentsample;
 
 
 import android.os.Bundle;
@@ -47,6 +47,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     public void initFragment(Bundle savedInstanceState) {
+        clearFragmentList();
         if (null != savedInstanceState) {
             homeFragment = (HomeFragment) getSupportFragmentManager().getFragment(savedInstanceState, HOME_FRAGMENT_KEY);
             contactsFragment = (ContactsFragment) getSupportFragmentManager().getFragment(savedInstanceState, CONTACTS_FRAGMENT_KEY);
